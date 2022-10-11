@@ -1,5 +1,9 @@
 package com.example.pokemonrecyclerview
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Pokemon (
     val id: String,
     val nombre: String,
@@ -8,4 +12,4 @@ data class Pokemon (
     val altura: String,
     val categoria : String,
     val habilidad: String
-    )
+    ) : Parcelable
